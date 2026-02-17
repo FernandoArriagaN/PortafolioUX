@@ -2,14 +2,9 @@
 .fallingImagesContainer {
   position: relative;
   overflow: hidden;
-  height: 92vh;
+  height: 80dvh;
   width: 100%;
- /* background: linear-gradient(
-  160deg,
-  rgba(173, 255, 150, 0.8) 0%,   
-  rgba(102, 204, 255, 0.8) 50%,  
-  rgba(255, 255, 255, 1) 100%    
-);*/
+
 background-image: url(./img/fondo\ 1-10.jpg.jpeg);
 
 background-size: cover;
@@ -67,6 +62,13 @@ background-size: cover;
 .redesContainer {
   display: flex;
   justify-content: center;
+}
+
+
+.instagramContainer, 
+.linkedinContainer, 
+.behanceContainer {
+  z-index: 88888;
 }
 
 
