@@ -1,0 +1,180 @@
+
+.cardElseContainer {
+  /*position: relative;*/
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  height: 60vh;
+  cursor: pointer;
+  flex: 0.5;
+  align-items: center;
+  /**/
+}
+
+
+
+
+
+
+.cardElseContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.8s ease;
+  z-index: 0;
+}
+
+
+
+
+.cardElseContainer,
+.cardElseContainer .titleElseCard {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.titleElseCard {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 32px;
+  width: 35%;
+  align-self: end;
+}
+
+
+
+.infoElseText {
+  position: relative;
+  width: 35%;
+  color: white;
+  transform: translateY(10px);
+  animation: fadeInUp 1.7s ease forwards 0.1s;
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 1.5rem;
+  opacity: 0;
+
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.activeElseCard {
+  flex: 1.5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition:  all ease 2s;
+  
+}
+
+.activeElseCard::before {
+    background: linear-gradient(to bottom, transparent 20%, rgba(0, 0, 0, 0.85));
+    transition:  all ease 2s;
+}
+
+.noActiveElse {
+  flex: 0.9;
+  opacity: 0.5;
+  font-size: 0;
+}
+.noActiveInfoText {
+  display: none;
+}
+
+
+/* ====== MEDIA QUERIES ====== */
+
+@media (max-width: 1024px) {
+  .cardElseContainer {
+    width: 80%;
+    justify-content: end; 
+    padding: 20px;
+    text-align: end;
+  }
+  .activeElseCard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .titleElseCard {
+    font-size: 28px;
+    width: 22%;
+    text-align: left;
+  }
+
+  .cardElseContainer::before {
+    background-position: left center;
+  }
+}
+
+
+
+
+@media (max-width: 600px) {
+.cardElseContainer {
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: -20px; 
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .activeElseCard {
+    width: 100%;
+    z-index: 10; 
+    border-radius: 20px 20px 20px 20px;
+    filter: drop-shadow(0px -10px 5px #000000b4);
+  }
+
+
+  .noActiveElse { 
+    display: flex;
+    flex-direction: column;
+    flex: 0.8;
+    padding-block: 8%;
+  
+  }
+
+
+  /* Asegurar que cada tarjeta tenga su z-index */
+  .cardElseContainer:nth-child(1) { 
+    z-index: 3; }
+  .cardElseContainer:nth-child(2) { 
+    z-index: 2; 
+    filter: drop-shadow(0px -10px 5px #000000b4);}
+  .cardElseContainer:nth-child(3) {
+    z-index: 1; 
+    filter: drop-shadow(0px -10px 5px #000000b4);}
+
+  .titleElseCard {
+    font-size: 24px;
+    width: 40%;
+  }
+
+  .infoElseText {
+    font-size: 1.4rem;
+    background-color: rgba(121, 121, 121, 0.582);
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}

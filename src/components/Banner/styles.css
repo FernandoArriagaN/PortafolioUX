@@ -1,0 +1,42 @@
+.bannerContainer {
+  background-color: rgb(102, 204, 255);
+  overflow: hidden;
+  width: 100%;
+  user-select: none;
+
+}
+
+.bannerTextContainer {
+  display: flex;
+  width: fit-content;
+  animation: scroll 20s linear infinite;
+}
+
+.bannerGroup {
+  display: flex;
+  align-items: center;
+  padding: 13px;
+  flex-shrink: 0;
+}
+
+.bannerGroup p {
+  font-size: 25px;
+  margin: 0 20px;
+  white-space: nowrap;
+  font-weight: bold;
+  color: white;
+}
+
+.bannerGroup img {
+  width: 25px;
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

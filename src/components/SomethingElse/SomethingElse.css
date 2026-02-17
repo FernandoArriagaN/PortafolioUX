@@ -1,0 +1,60 @@
+.somethingContainer {
+    display: flex;
+    justify-content: center; 
+    box-sizing: border-box;
+    margin-inline: 5%; 
+    flex-direction: column;
+}
+
+.titleSomethingElse {
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    align-self: center;
+    padding:8% 5%;
+    
+}
+
+.proyectElseContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    
+.proyectElseContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 5%;
+    gap: 2%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.titleSomethingElse {
+    padding-bottom:13%;
+    width: 232px;
+    height: 96px;
+}
+}
+
+
+
+
+
+
+
+
+

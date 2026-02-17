@@ -1,0 +1,115 @@
+
+.cardContainer {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  width: 25%;
+  height: 55vh;
+
+}
+
+.cardContainer.activeCard {
+  width: 35%;
+}
+
+
+/* Efecto de imagen */
+.cardContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.8s ease;
+  z-index: 0;
+}
+
+/* Hover zoom */
+.cardContainer:hover::before {
+  transform: scale(1.3);
+}
+
+/* Contenido de la card */
+.cardContainer .buttonProyect,
+.cardContainer .titleCard {
+  position: relative;
+  z-index: 1;
+}
+
+.buttonProyect {
+  align-self: flex-end;
+}
+
+.titleCard {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 32px;
+  width: 35%;
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+/* Tablets: un poco más anchas, layout más horizontal */
+@media (max-width: 1024px) {
+  .cardContainer {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .cardContainer.activeCard {
+    width: 100%;
+    max-width: 600px;
+    height: 260px;    
+  }
+
+  .titleCard {
+    font-size: 28px;
+  }
+
+  .buttonProyect {
+    align-self: center;
+  }
+
+  .cardContainer::before {
+    background-position: left center;
+  }
+}
+
+
+
+
+/* Celulares: vertical y más compactas */
+@media (max-width: 600px) {
+  .cardContainer {
+    width: 75%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+  .cardContainer.activeCard {
+    width: 80%;
+    max-width: 410px;
+    height: 160px;
+  }
+
+  .titleCard {
+    font-size: 24px;
+  }
+
+  .buttonProyect {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}

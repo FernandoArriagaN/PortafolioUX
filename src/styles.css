@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(./components/SomethingElse/img/fondoVerde.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: -30% 120%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+@media (max-width: 390px) {
+    body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 20% 109%;
+}
+}

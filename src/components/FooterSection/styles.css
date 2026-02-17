@@ -1,0 +1,44 @@
+.footerContainer{
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 68px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+.titleFooter {
+    font-size: 40px;
+}
+.navContainerFooter {
+    margin-right: 25px;
+}
+.iconNav {
+    width: 73px;
+    
+    
+    &:hover{
+        scale: 1.1;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    
+.footerContainer{
+    justify-content: center;
+}
+}
+
+
+@media (max-width: 600px) {
+    
+.footerContainer{
+    justify-content: center;
+    gap: 0;
+    flex-direction: column;
+    padding: 8% 0% 0% 0%;
+}
+}
+

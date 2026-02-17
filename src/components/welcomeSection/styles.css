@@ -1,0 +1,80 @@
+
+.fallingImagesContainer {
+  position: relative;
+  overflow: hidden;
+  height: 92vh;
+  width: 100%;
+ /* background: linear-gradient(
+  160deg,
+  rgba(173, 255, 150, 0.8) 0%,   
+  rgba(102, 204, 255, 0.8) 50%,  
+  rgba(255, 255, 255, 1) 100%    
+);*/
+background-image: url(./img/fondo\ 1-10.jpg.jpeg);
+
+background-size: cover;
+
+}
+
+.fallingImagesTarget {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
+  user-select: none;
+  position: relative;
+  z-index: 1;
+}
+
+.fallingImage {
+  display: inline-block;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+  
+}
+
+.fallingImagesCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.titleFallingStars {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 100;
+
+
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 370px;
+  }
+}
+
+
+
+.redesContainer {
+  display: flex;
+  justify-content: center;
+}
+
+
+.introductionContainer {
+  z-index: 9;
+  position: relative;
+  user-select: none;
+  margin-block: 3%;
+}
+
+

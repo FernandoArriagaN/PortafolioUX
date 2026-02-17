@@ -1,0 +1,361 @@
+
+.proyectContainer {
+    background-image: url(../img/stars.png);
+    background-repeat: no-repeat;
+    background-position: bottom 60% left 110%;
+    background-size: 35%;
+    
+}
+
+.titleContainer  {
+    display: flex;
+    height: 325px;
+    background-size: cover;
+    box-sizing: border-box;
+    align-items: flex-end;
+   
+
+}
+.titleProyect {
+    font-size: 6dvw;
+    color: #fff;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    text-shadow: 3px 8px 18px #000000cf;
+    
+}
+
+.casoCompleto {
+    width: 252px;
+    height: 57px;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.bannerProyect {
+    width: 100%;
+}
+.centralSection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5%;
+    box-sizing: border-box;
+   
+}
+.titleRetoSolution {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.texRetoSolutonContainer {
+    color: #000;
+    width: 40%;
+    
+    
+}
+.textRetoSolution {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+.asideContainerImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.asideImgProduct {
+    width: 98%;
+}
+
+
+.tableTitlePage {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.tableInfoPage {
+    font-size: 32px;
+    font-weight: 800;
+    text-align:left;
+}
+.txtCpnmte {
+    caret-color: #000;
+}
+
+
+.tableContainer {
+  width: 100%;
+  padding-inline: 5%;
+}
+
+
+
+
+
+
+
+
+.moksContainer {
+    display: flex;
+    justify-content: center;
+    padding-inline: 5%;
+}
+
+.moks {
+    width: 100%;
+   
+}
+
+
+
+.activeDot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(17, 140, 255);
+    border: none;
+    cursor: pointer;
+    margin: 27px;
+}
+
+
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(212, 212, 212);
+    border: none;
+    cursor: pointer;
+    margin: 27px;
+}
+
+.containerGalery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrowIconGaley {
+    width: 80px; 
+}
+.arrowIconGaley path {
+    fill: #5EC5ED;
+    height: 52px;
+}
+.buttonArrow {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+
+.imgGalery {
+    width: 394px;
+}
+
+
+.dotContainer {
+
+    margin-top: 25px;
+}
+
+.otrherProyectsContainer {
+    padding-block: 2%;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+
+
+.otrosProyectosContainerSidle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+
+}
+.garabatoContainerOtros {
+    width: 75%;
+}
+
+.titleOtrosProyectosPage {
+    font-size: 127%;
+    font-weight: 800;
+    line-height: 54%;
+}
+span {
+    font-variant-caps:all-petite-caps;
+    font-size: 77%;
+    font-weight: 500;
+}
+
+.containerEfectSlider {
+    display: flex;
+    width: 100%;
+    gap: 13px;
+    box-sizing: border-box;
+    padding-right: 5%;
+    justify-content: flex-end;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .arrowIconGaley {
+        width: 60px;
+    }
+    
+    .imgGalery {
+        max-width: 350px;
+    }
+.centralSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.otrherProyectsContainer {
+    width: 100%;
+    box-sizing: border-box;
+}
+.texRetoSolutonContainer{
+    width: 100%;
+}
+
+
+}
+
+
+@media (max-width: 600px) {
+    .otrherProyectsContainer {
+        flex-direction: column;
+    }
+
+    .containerGalery {
+        gap: 5px;
+    }
+    
+    .arrowIconGaley {
+        width: 40px;
+    }
+    
+    .imgGalery {
+        max-width: 280px;
+    }
+    
+    .dot,
+    .activeDot {
+        width: 10px;
+        height: 10px;
+        margin: 15px 8px;
+    }
+   
+    .texRetoSolutonContainer{
+        width: 100%;
+    }
+    .moksContainer {
+        padding: 0% 5% 13% 5%;
+    }
+    .centralSection {
+        padding: 25% 5% 0%;
+    }
+    .tableContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .casoCompleto {
+        top: 80dvh;
+        justify-self: center;
+        /* height: 57px; */
+        position: absolute;
+    }
+    .titleProyect{
+        font-size: 16dvw;
+    }
+    table,
+    thead,
+    tbody,
+    th,
+    tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none; 
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    td {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-bottom: 4px;
+        color: #555;
+    }
+
+.containerEfectSlider {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Suavidad en iOS */
+    scrollbar-width: none; 
+    justify-content: flex-start;
+    padding-block: 10% ;
+    
+}
+
+
+.containerEfectSlider > * {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 85vw; 
+    
+}
+}
+
+
+
+@media (max-width: 375px) {
+    .casoCompleto {
+        top: 100dvh;
+    }
+
+     .arrowIconGaley {
+        width: 30px;
+    }
+    
+    .imgGalery {
+        max-width: 240px;
+    }
+    
+    .dot,
+    .activeDot {
+        margin: 10px 5px;
+    }
+}
