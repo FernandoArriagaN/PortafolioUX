@@ -221,9 +221,9 @@ const FallingImages = ({
       <div className='logoContainer'><img loading='lazy' alt='logoPrincipal' src={celeste} /></div>
       
       <nav className='redesContainer'>
-        <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/holi.celeste/'  > <img src={insta} /></a>
-        <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/celestegama/'><img src={linkedin}/></a>
-        <a target="_blank" rel="noopener noreferrer" href='https://www.behance.net/celestegama'><img src={behance}/></a>
+        <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/holi.celeste/'  > <img alt='instagramLogo' src={insta} /></a>
+        <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/celestegama/'><img alt='linkedinmLogo' src={linkedin}/></a>
+        <a target="_blank" rel="noopener noreferrer" href='https://www.behance.net/celestegama'><img alt='behanceLogo' src={behance}/></a>
       </nav>
 
       </article>

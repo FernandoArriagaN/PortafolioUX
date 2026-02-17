@@ -49,7 +49,7 @@ export const ProyectsPage = () => {
                 </button>
                 <div className='imgContainer' key={currentProyecto} >
 
-                    <img id='imageProyect' className={isAnimating 
+                    <img alt='imgOfProyectActive' id='imageProyect' className={isAnimating 
                             ? direction === 'next'  
                             ? 'animating'
                             :'animatingPrev' 
