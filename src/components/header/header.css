@@ -242,6 +242,8 @@ details[open] > .sumaryProyect::after {
     .navContainer {
         background-color: #ffffff;
         filter: drop-shadow(5px 5px 10px #0000002d);
+        padding: 0px 0px;
+        align-self: center;
     }
    
     .navOcultoActive.active {
@@ -258,6 +260,7 @@ details[open] > .sumaryProyect::after {
     
     .buttonMenuOculto {
         display: flex;
+        padding: 1px 20px;
     }
     
     .textInfoHeader {
@@ -275,11 +278,12 @@ details[open] > .sumaryProyect::after {
         border-radius: 0;
     }
     .navContainer {
-        padding: 2% 7%;
+        padding: 0% 3%;
+        align-self: center;
     }
 
     .buttonMenuOculto {
-        padding: 0;
+        padding: 0px 5px;
     }
     
     .textInfoHeader {

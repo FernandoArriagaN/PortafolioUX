@@ -77,7 +77,7 @@ import garabato from '../img/garabato.svg';
             </tr>
         </tbody>
         </table>
-
+            {currentProyecto.proyectLink && <nav className="casocompletoContainer"> <a target="_blank" rel="noopener noreferrer" className="casoCompleto" href={currentProyecto.proyectLink}> Ir al caso completo</a> </nav>}
         <article className="centralSection">
             <aside className="asideContainerImg">
                 {currentProyecto.imgAside ? 
@@ -119,7 +119,6 @@ import garabato from '../img/garabato.svg';
                 <p style={{whiteSpace: 'pre-line'}} className="textRetoSolution"> {currentProyecto.infoReto} </p>
                 <h3 className="titleRetoSolution">Solución:</h3>
                 <p style={{whiteSpace: 'pre-line'}} className="textRetoSolution"> {currentProyecto.infoSolution}</p>
-                 {currentProyecto.proyectLink && <a target="_blank" rel="noopener noreferrer" className="casoCompleto" href={currentProyecto.proyectLink}> Ir al caso completo</a>}
             </article>
             
         </article>

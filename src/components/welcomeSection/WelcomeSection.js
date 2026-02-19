@@ -5,12 +5,13 @@ import start from './img/Vector.svg';
 
 export const WelcomeSection = () => {
   const filtersCustom = [
-    'sepia(100%) saturate(300%) hue-rotate(0deg)',
-    'sepia(100%) saturate(300%) hue-rotate(60deg)',
-    'sepia(100%) saturate(300%) hue-rotate(120deg)',
+    'brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(383%) hue-rotate(170deg) brightness(97%) contrast(92%)'
+   /* 'sepia(100%) saturate(100%) hue-rotate(0deg)',
+    'sepia(100%) saturate(100%) hue-rotate(60deg)',
+    'sepia(100%) saturate(100%) hue-rotate(120deg)',
    // 'sepia(100%) saturate(600%) hue-rotate(180deg)', blancas
-    'sepia(100%) saturate(400%) hue-rotate(240deg)',
-    'sepia(100%) saturate(400%) hue-rotate(300deg)',
+    'sepia(100%) saturate(100%) hue-rotate(240deg)',
+    'sepia(100%) saturate(100%) hue-rotate(300deg)',*/
   ];
 
   const startCount = 46; 
@@ -19,7 +20,7 @@ export const WelcomeSection = () => {
     Array(startCount).fill(start)
   );
   
-  // Repetir los colores si hay más imágenes que colores
+  //Repetir los colores si hay más imágenes que colores
   const [filters] = useState(
     Array(startCount).fill(0).map((_, i) => 
       filtersCustom[i % filtersCustom.length]

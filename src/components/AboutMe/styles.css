@@ -26,10 +26,10 @@
 
 /* Contenedor de la info */
 .aboutMeInfoContainer {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start;*/
 }
 
 /* Imagen decorativa */
@@ -49,6 +49,25 @@
 .profileImg {
     width: 90%;
     max-width: 400px;
+}
+.buttonDownloadCv {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 19px;
+    border-radius: 25px;
+    display: flex;
+    font-size: 21px;
+    gap: 7px;
+    align-items: center;
+    place-self: center;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: ease 1s;
+}
+.buttonDownloadCv:hover {
+    scale: 1.2;
+    transition: ease 1s;
 }
 
 /* ====== MEDIA QUERIES ====== */
@@ -93,29 +112,44 @@
 
 
 @media (max-width: 600px) {
+    
+    .imgProfilecontainer {
+        position: relative;
+        width: 100%;
+    }
+
     .titleAboutMe {
         font-size: 6.5rem;
-        position: absolute;
-        bottom: -21%;
         font-weight: 900;
-        z-index: -1;
+        position: absolute;
+        bottom: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+        white-space: nowrap;
+        margin: 0;
     }
 
-    .aboutMeText {
-        font-size: 4vw;
-        width: 100%;
-        padding: 0 10px;
-       
-    }
-    .aboutMeInfoContainer {
-        align-items: center;
-    }
-    .garabatoImg {
-        display: none;
-    }
-
+  
     .profileImg {
         width: 80%;
         max-width: 250px;
+        position: relative;
+        z-index: 1;          
+    }
+
+    .aboutMeText {
+        font-size: 6vw;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .aboutMeInfoContainer {
+        align-items: center;
+    }
+
+    .garabatoImg {
+        display: none;
     }
 }
+

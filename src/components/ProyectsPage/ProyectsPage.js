@@ -32,6 +32,7 @@ export const ProyectsPage = () => {
     
     return(
         <section id="proyects" className="proyectsPageContaier">
+            <h3 className='proyectsTitle'>Proyectos</h3>
             <article className="sliderNavContainer" key={currentProyecto.name}>
                 {proyectsData.map((proyecto, index) => {
                     return <div key={index} 

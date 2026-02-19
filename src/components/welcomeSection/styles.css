@@ -4,10 +4,9 @@
   overflow: hidden;
   height: 80dvh;
   width: 100%;
-
-background-image: url(./img/fondo\ 1-10.jpg.jpeg);
-
-background-size: cover;
+  background-image: url(./img/fondo\ 1-10.jpg.jpeg);
+  background-size: cover;
+  background-position: center;
 
 }
 
@@ -62,12 +61,18 @@ background-size: cover;
 .redesContainer {
   display: flex;
   justify-content: center;
+  pointer-events: auto; 
+  position: relative;
+  z-index: 88888;
 }
+
 
 
 .instagramContainer, 
 .linkedinContainer, 
 .behanceContainer {
+  pointer-events: auto;
+  position: relative;
   z-index: 88888;
 }
 
@@ -77,6 +82,19 @@ background-size: cover;
   position: relative;
   user-select: none;
   margin-block: 3%;
+  pointer-events: none;
+}
+
+
+
+.fallingImagesCanvas,
+.fallingImagesCanvas canvas {
+  pointer-events: none !important;
+}
+@media (max-width: 600px) {
+    .redesContainer img {
+    width: 80px;
+  }
 }
 
 
