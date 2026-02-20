@@ -205,6 +205,7 @@ const FallingImages = ({
 
 
   return (
+    <>
     <section
       ref={containerRef}
       className={`fallingImagesContainer ${className}`}>
@@ -219,19 +220,17 @@ const FallingImages = ({
       <article className='introductionContainer'>
       <p className='titleFallingStars'>¡Hola! me llamo</p>
       <div className='logoContainer'><img loading='lazy' alt='logoPrincipal' src={celeste} /></div>
+      </article>
       
-      <nav className='redesContainer'>
+    </section>
+    <nav className='redesContainer'>
+      <div className='contred'>
         <a className='instagramContainer' target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/web.gama/'  > <img alt='instagramLogo' src={insta} /></a>
         <a className='linkedinContainer' target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/celestegama/'><img alt='linkedinmLogo' src={linkedin}/></a>
         <a className='behanceContainer' target="_blank" rel="noopener noreferrer" href='https://www.behance.net/celestegama'><img alt='behanceLogo' src={behance}/></a>
-      </nav>
-
-      </article>
-
-
-
-      
-    </section>
+      </div>
+    </nav>
+    </>
   );
 };
 

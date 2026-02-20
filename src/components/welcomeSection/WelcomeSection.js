@@ -5,7 +5,8 @@ import start from './img/Vector.svg';
 
 export const WelcomeSection = () => {
   const filtersCustom = [
-    'brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(383%) hue-rotate(170deg) brightness(97%) contrast(92%)'
+    /*'brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(383%) hue-rotate(170deg) brightness(97%) contrast(92%)'*/
+    'brightness(0) saturate(100%) invert(85%) sepia(39%) saturate(618%) hue-rotate(162deg) brightness(91%) contrast(120%)'
    /* 'sepia(100%) saturate(100%) hue-rotate(0deg)',
     'sepia(100%) saturate(100%) hue-rotate(60deg)',
     'sepia(100%) saturate(100%) hue-rotate(120deg)',

@@ -23,10 +23,6 @@
 .cardContainer::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: inherit;
-  background-size: cover;
-  background-position: center;
   transition: transform 0.8s ease;
   z-index: 0;
 }
@@ -58,9 +54,12 @@
 
 @media (max-width: 1024px) {
   .cardContainer {
-   
-    justify-content: space-between;
-    padding: 20px;
+    height: 33vh;
+    position: unset;
+    padding: 0;
+
+
+    
   }
   .cardContainer.activeCard {
     width: 50%;
@@ -69,10 +68,7 @@
 
   .titleCard {
     font-size: 28px;
-  }
-
-  .buttonProyect {
-    align-self: center;
+    padding: 17px 5px;
   }
 
   .cardContainer::before {
@@ -81,6 +77,7 @@
 
   .buttonProyect {
     place-self: end;
+    padding: 10px;
   }
 }
 

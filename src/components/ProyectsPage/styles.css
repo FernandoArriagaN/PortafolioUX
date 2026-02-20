@@ -1,18 +1,25 @@
-
-
-
 .proyectsPageContaier {
+    position: relative;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     padding-block: 5%;
     box-sizing: border-box;
+}
+
+.proyectsPageContaier::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21%;
+    height: 100%;
     background-image: url('./img/stars.png');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 21%;
-    
-      
+    background-size: contain;
+    opacity: 0.3; 
+    pointer-events: none;
 }
 
 .proyectsTitle {

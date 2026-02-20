@@ -95,13 +95,6 @@
   padding-inline: 5%;
 }
 
-
-
-
-
-
-
-
 .moksContainer {
     display: flex;
     justify-content: center;
@@ -112,8 +105,6 @@
     width: 100%;
    
 }
-
-
 
 .activeDot {
     width: 15px;
@@ -167,16 +158,15 @@
 }
 
 .otrherProyectsContainer {
-    padding-block: 2%;
     display: flex;
     justify-content: space-between;
-   
-
 }
 
 .casocompletoContainer {
-    justify-self: end;
+    display: flex;
     margin: 87px 70px 0px 0px;
+    /* text-align: end; */
+    justify-content: flex-end;
 }
 .otrosProyectosContainerSidle {
     display: flex;
@@ -207,8 +197,12 @@ span {
     width: 100%;
     gap: 13px;
     box-sizing: border-box;
-    padding-right: 5%;
+    /* padding-right: 5%; */
     justify-content: flex-end;
+}
+
+.proyectsCarrousel {
+    padding: 2% 5%;
 }
 
 
@@ -230,14 +224,19 @@ span {
     .otrherProyectsContainer {
         width: 100%;
         box-sizing: border-box;
+
     }
     .texRetoSolutonContainer{
         width: 100%;
     }
     .casocompletoContainer {
-        justify-self: center;
-        margin: 25px 0px 0px 0px
+    justify-content: center;
+
     }
+
+    .containerEfectSlider {
+    width: 50%;
+}
 
 
 }
@@ -246,6 +245,7 @@ span {
 @media (max-width: 600px) {
     .otrherProyectsContainer {
         flex-direction: column;
+        width: 100%;
     }
 
     .containerGalery {
@@ -330,9 +330,12 @@ span {
     scrollbar-width: none; 
     justify-content: flex-start;
     padding-block: 10% ;
+    width: 100%;
     
 }
-
+.proyectsCarrousel {
+    padding: 2% 0%;
+}
 
 .containerEfectSlider > * {
     flex: 0 0 auto;

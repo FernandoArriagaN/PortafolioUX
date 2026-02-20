@@ -47,6 +47,12 @@
 
 }
 
+ .contred {        
+    text-align: center;
+    
+  }
+  
+
 .logoContainer {
   display: flex;
   justify-content: center;
@@ -59,10 +65,13 @@
 
 
 .redesContainer {
-  display: flex;
-  justify-content: center;
-  pointer-events: auto; 
-  position: relative;
+    /* display: flex; */
+  /* justify-content: center; */
+  /* pointer-events: auto; */
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  justify-self: center;
   z-index: 88888;
 }
 
@@ -92,8 +101,22 @@
   pointer-events: none !important;
 }
 @media (max-width: 600px) {
-    .redesContainer img {
+  .redesContainer {
+    /*display: flex; */
+    /* justify-content: center; */
+    /* pointer-events: auto; */
+    /*position: relative;*/
+    z-index: 88888;
+  }
+  .fallingImagesContainer {
+    height: 65dvh;
+ 
+  }
+
+ 
+  .redesContainer img {
     width: 80px;
+    
   }
 }
 

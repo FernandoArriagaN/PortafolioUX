@@ -20,7 +20,7 @@ export const ProyectCard = ({name, backGround, index, route, focusProyect, onMou
                 transformOrigin: 'center center',
                 zIndex: isActive ? 10 : 1,
                 transition: 'all 0.3s ease' }} >
-            <Link  className='buttonProyect'> <img alt='arrowIconImage' src={arrowPoryect} /></Link>
+            <span  className='buttonProyect'> <img alt='arrowIconImage' src={arrowPoryect} /></span>
             <p className='titleCard'>{name}</p>
         </Link>
     )
