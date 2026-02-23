@@ -1,6 +1,6 @@
 # Portafolio UX – Implementación en React desde Diseño en Figma
 
-Proyecto colaborativo donde el diseño UX/UI fue realizado en Figma por Daniela y posteriormente implementado en React por Fernando Arriaga.
+Proyecto colaborativo donde el diseño UX/UI fue realizado en Figma por Daniela Gama y posteriormente implementado en React por Fernando Arriaga.
 
 ---
 
@@ -21,7 +21,7 @@ El proyecto fue desplegado en Netlify.
 
 ## Roles en la Colaboración
 
-### Diseño UX/UI – Daniela
+### Diseño UX/UI – Daniela Gama
 - Investigación y estructura del contenido
 - Wireframes
 - Prototipo en alta fidelidad en Figma
