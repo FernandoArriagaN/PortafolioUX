@@ -45,6 +45,14 @@ El proyecto fue desplegado en Netlify.
 - Figma (como herramienta base de diseño)
 - Netlify (deploy)
 
+  
+---
+
+##  Vista previa
+
+> https://danielagama.netlify.app/
+
+
 ---
 
 ## Enfoque Técnico
